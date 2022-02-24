@@ -1,0 +1,463 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {overflow-x: hidden;}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(../teamwork.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%
+}
+.navbar-light .navbar-toggler {color: gray;}
+.bg-light {background-color: rgba(0,0,0,0.8) !important;}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+    font-size: 18px;
+    margin-right: 10%;
+}
+.navbar-brand {margin-left: 4rem;}
+.navbar-light .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e7e7e7;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {color: #e7e7e7;}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: burlywood;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-light .navbar-nav .nav-link {font-weight: 500; color: #e7e7e7;}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {color: burlywood;}
+.nav-link {
+    transition: color .3s ease-in-out,
+    background-color .35s ease-in-out,
+    border-color .35s ease-in-out;
+}
+header .heading {margin-top: 35%; color: #fff;}
+header .heading h1 {font-size: 84px;}
+header .heading h1 span {color: rgb(245, 180, 96);}
+.about-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+}
+.about-us .far,
+.services .far,
+.features .far,
+.second-features .far,
+.our-price .far,
+.our-team .far,
+.our-blogs .far,
+.contact-us .far {
+    font-size: 50px;
+    height: 36px;
+    border-radius: 50%;
+    animation-name: lightining;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: animation 0.4s;
+}
+@keyframes lightining {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: yellow;
+        box-shadow: 0px -8px 10px 2px grey;
+    }
+    100% {
+        background-color: white;
+    }
+}
+.about-us h2,
+.services h2,
+.features h2,
+.second-features h2,
+.our-price h2,
+.our-team h2,
+.testimonials h2,
+.our-blogs h2,
+.contact-us h2 {
+    font-size: 40px;
+}
+.about-us h2 span,
+.services h2 span,
+.features h2 span,
+.second-features h2 span,
+.our-price h2 span,
+.our-team h2 span,
+.testimonials h2 span,
+.our-blogs h2 span,
+.contact-us h2 span {
+    color: rgb(240, 176, 94);
+    font-weight: bold;
+}
+.about-us p,
+.services p,
+.features p,
+.second-features p,
+.our-price p,
+.our-team p,
+.our-blogs p,
+.contact-us p {
+    margin-top: 10px;
+    opacity: 80%;
+}
+.about-us h3,
+.features h3 {font-weight: bold;}
+.about-us h3::first-letter,
+.features h3::first-letter {color: rgb(240, 176, 94);}
+.about-us p::first-letter {
+    color: chocolate;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about-us .col-md-6 {padding-top: 40px; padding-bottom: 20px;}
+.download {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: burlywood;
+}
+.download h4 {font-size: 30px;}
+.download .move {padding-top: 30px;}
+.download a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-in-out;
+}
+.download a:hover {background-color: #fff; color: black;}
+.services {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.services .font {margin-top: 40px;}
+.services .font .fas,
+.services .font .fa {
+    margin-bottom: 15px;
+    border: 1px solid #aba4a4;
+    padding: 18px;
+    border-radius: 50%;
+    color: #e9a54e;
+    transition-property: color,transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+.services .font:hover .fas,
+.services .font:hover .fa {
+    transform: rotateY(360deg);
+    background-color: #e9a54e;
+    color: #fff;
+}
+.our-progress {padding-top: 60px;}
+.our-progress .progress {margin: 50px; height: 36px;}
+.our-progress .progress .progress-bar {font-size: 17px; font-weight: bold;}
+.features {padding-top: 80px;}
+.features ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.features ul li a {
+    color: black;
+    text-decoration: underline;
+    border-right: 1px solid #eee;
+    box-shadow: 0px 0px 2px 0px grey;
+    border-radius: 3px;
+    padding: 30px 45px;
+    font-size: 25px;
+}
+.features ul .active {
+    border-bottom: 2px solid orangered;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 0px 5px 0px grey;
+    color: burlywood;
+}
+.features .paragraph,
+.features .the-image {padding-top: 90px;}
+.features h3 {margin-bottom: 20px;}
+.features p {line-height: 25px;}
+.second-features {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    margin-top: 60px;
+}
+.second-features .row,
+.our-price .row,
+.our-team .row,
+.our-blogs .row {
+    padding-top: 30px;
+}
+.second-features ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.second-features ul li {
+    padding: 8px 18px;
+    background: #eee;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.second-features ul li:hover {background-color: tomato; color: #fff;}
+.second-features ul li:nth-child(1) {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    background-color: tomato;
+    color: #fff;
+}
+.second-features ul li:nth-child(4) {border-top-right-radius: 7px; border-bottom-right-radius: 7px;} 
+.second-features ul li:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 51px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: tomato transparent transparent transparent
+}
+.second-features .style img {width: 100%; height: auto;}
+.second-features .style {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+.second-features .style::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 220%;
+    background-color: rgba(0,0,0,0.8);
+    top: -50%;
+    left: -100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: 0.5s;
+}
+.second-features .style:hover::before {left: 10%;}
+.second-features .content {
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 2;
+    top: -100%;
+    left: 0;
+    color: #fff;
+    transition: 1.1s;
+}
+.second-features .style:hover .content {top: 80px;}
+.second-features .content .fas,
+.second-features .content .fab {padding-bottom: 20px;}
+.our-price {padding-top: 80px;}
+.our-price .price-circle p {
+    border-radius: 50%;
+    padding: 18px 0px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: tomato;
+    color: #fff;
+    position: relative;
+    right: -28%;
+    transition: all 0.5s ease-in-out;
+}
+.our-price .price:hover p {transform: rotate(360deg); border: 5px solid rgb(189, 184, 184);}
+.our-price .price-circle p span {font-size: 27px; font-weight: bold;}
+.our-price .price-circle {margin-bottom: 40px;}
+.our-price ul li {line-height: 315%;}
+.our-price ul li span {color: tomato; font-weight: bold;}
+.our-price a {
+    text-decoration: none;
+    border: 3px solid tomato;
+    padding: 6px 8px;
+    color: black;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.our-price a:hover {background-color: tomato; color: #fff;}
+.our-price .price-circle {
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    transition: all 0.4s ease;
+}
+.our-price .price {
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-radius: 7px;
+    transition: all 0.4s ease;
+}
+.our-price .price:hover .price-circle {box-shadow: 0px 0px 6px 1px grey;}
+.our-team {padding-top: 80px;}
+.our-team .team {
+    padding-bottom: 7px;
+    transition: all 0.4s ease-in-out;
+    margin: 10px;
+}
+.our-team .content {padding-left: 10px; padding-right: 10px;}
+.our-team .team:hover {box-shadow: 0px 0px 5px 0px;}
+.our-team img {width: 100%;}
+.our-team .team h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+}
+.our-team .team:hover h3 {color: rgb(240, 176, 94);}
+.our-team .content ul {display: flex; justify-content: center;}
+.our-team .content ul li {margin: 10px;}
+.our-team .team .fab {
+    font-size: 20px;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+.our-team .fa-facebook-f:hover {color: #3b5998;}
+.our-team .fa-twitter:hover {color: #337ab7;}
+.our-team .fa-pinterest-p:hover {color: #bd081c;}
+.our-team .fa-instagram:hover {color: rgb(119, 54, 54);}
+.our-team .fa-google:hover {color: #dc4e41;}
+.our-team .fa-facebook-f:hover,
+.our-team .fa-twitter:hover,
+.our-team .fa-pinterest-p:hover,
+.our-team .fa-instagram:hover,
+.our-team .fa-google:hover {
+    transform: rotate(360deg)
+}
+.our-team .big-team {transition: all 0.4s ease-in-out;}
+.testimonials {
+    background: url(../light-bulb-gb28e9a5e7_1920.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 60px;
+}
+.testimonials .testi {
+    background: rgba(0,0,0,0.7);
+    min-height: 500px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fff;
+}
+.testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #888;
+    margin-bottom: 15px;
+}
+.testimonials h2 {margin-bottom: 50px;}
+.testimonials h4 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: tomato;
+}
+.testimonials ul {display: flex; justify-content: center;}
+.testimonials ul li {margin: 5px;} 
+.testimonials ul .fas {color: gold;}
+.carousel-indicators {margin-bottom: -2rem;}
+.our-numbers {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+.our-numbers span {color: red;}
+.our-numbers .far,
+.our-numbers .fas {color: #666; margin-right: 2%;}
+.our-numbers p {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 50%;
+}
+.our-blogs {padding-top: 80px;}
+.our-blogs .blogs {margin: 10px; position: relative;}
+.our-blogs img {width: 100%;}
+.our-blogs .data-meta {
+    background-color: #444;
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    padding: 6px 15px;
+}
+.our-blogs ul {display: flex;}
+.our-blogs ul li {margin: 8px;}
+.our-blogs ul .fas {color: chocolate;}
+.our-blogs h4 {margin-top: 18px;}
+.our-blogs p {line-height: 1.7rem;}
+.our-blogs a {
+    text-decoration: none;
+    color: black;
+    border: 2px black solid;
+    padding: 2% 37%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.our-blogs a:hover {
+    background-color: chocolate;
+    color: #fff;
+    border-color: chocolate;
+}
+.brands {padding-top: 60px;}
+.brands ul {display: flex;}
+.brands ul li img {
+    transition: all 0.4s ease-in-out;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.brands ul li img:hover {opacity: 1;}
+.contact-us {padding-top: 60px;}
+.contact-us h4 {margin-bottom: 25px;}
+.contact-us h4 span {color: rgb(240, 176, 94);}
+.contact-us p {line-height: 40px;}
+.contact-us p span {font-weight: bold;}
+.contact-us .row {flex-wrap: nowrap; padding-top: 40px;}
+.contact-us .input-group input {margin: 10px;}
+.contact-us .form-group .sub {margin-left: 10px; width: 110%;}
+.contact-us textarea {
+    margin-left: 10px;
+    width: 110%;
+    height: 150px;
+}
+.contact-us .form-group input {margin: 20px;}
+.contact-us button {width: 55%; margin: 10px;}
+footer {padding-top: 60px;}
+footer ul {display: flex; justify-content: center;}
+footer ul li {margin: 20px; cursor: pointer;}
+footer ul .fab {
+    border: 2px solid #999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 12px 0;
+    color: #999;
+}
+footer .fa-facebook-f:hover {color: #3b5998; border-color: #3b5998;}
+footer .fa-twitter:hover {color: #60abec; border-color: #60abec;}
+footer .fa-linkedin-in:hover {color: rgb(49, 35, 141); border-color: rgb(49, 35, 141);}
+footer .fa-google:hover {color: rgb(240, 104, 80); border-color: rgb(240, 104, 80);}
+footer .fa-youtube:hover {color: darkred; border-color: darkred;}
+footer .fa-instagram:hover {color: rgb(18, 100, 100); border-color: rgb(18, 100, 100);}
+footer .fa-behance:hover {color: rgb(6, 120, 235); border-color: rgb(6, 120, 235);}
+footer p {font-weight: bold;}
+footer p span {color: tomato;}

@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+    header .heading {
+        margin-left: 0;
+    }
+    .features h2,
+    .second-features h2,
+    .our-price h2,
+    .testimonials h2,
+    .contact-us h2 {
+        font-size: 25px;
+    }
+    .features ul li a {
+        padding: 20px 21px;
+    }
+    .second-features ul li {
+        padding: 5px 13px;
+    }
+    .our-price .price-circle p {
+        right: -34%;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        visibility: hidden;
+    }
+    .our-numbers .number {
+        margin: 10px;
+    }
+    .our-blogs .blogs {
+        margin: 20px;
+    }
+    .our-blogs a {
+        padding: 2% 33%;
+    }
+    footer ul {
+        display: block;
+    }
+}
